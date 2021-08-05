@@ -7,10 +7,21 @@ body{
     margin:0;
 }
 .container{
-    width:75%;
+    width:80%;
     margin:auto auto;
     box-shadow: 5px 5px 10px 5px gainsboro;
     background-color: white;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+
+.github-repo,.lnkd-link{
+    border:solid 1px white;
+    padding:5px;
+    margin:5px;
+    text-align: center;
 }
 .description{
     display:flex;
@@ -53,6 +64,7 @@ form{
 input{
     border: none;
     border-bottom: 2px solid rgb(49, 49, 124);
+    width:auto;
 }
 .btn{
     color:white;
@@ -86,8 +98,15 @@ input{
     .description{
         flex-direction:column;
     }
+    .heading{
+        width:90%;
+    }
     form{
         align-items: center;
         justify-content: center;
+    }
+    label{
+        display:flex;
+        flex-direction: column;
     }
 }
