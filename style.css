@@ -1,0 +1,87 @@
+html,body{
+    height:100%;
+}
+body{
+    display:flex;
+    font-family: sans-serif;
+    margin:0;
+}
+.container{
+    width:75%;
+    margin:auto auto;
+    box-shadow: 5px 5px 10px 5px gainsboro;
+}
+.description{
+    display:flex;
+    flex-direction: row-reverse;
+    background-color: rgb(44, 44, 110);
+    padding:3%;
+    justify-content: space-between;
+    color:white;
+}
+.heading{
+    width:70%;
+}
+.sub-box{
+    display:flex;
+    flex-direction: row;
+    max-height:100%;
+}
+.image-box{
+    width:40%;
+}
+.img{
+    width: 100%;
+    height:100%;
+}
+.input-box{
+    width:55%;
+    padding:3%;
+}
+form{
+    padding:3%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+.price,.quantity,.btn{
+    margin:5px;
+}
+input{
+    border: none;
+    border-bottom: 2px solid rgb(49, 49, 124);
+}
+.btn{
+    color:white;
+    background-color: rgb(49, 49, 124);
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    width:100px;
+    height:35px;
+}
+.result{
+    color:rgb(44, 44, 110);
+    text-align: center;
+}
+@media screen and (max-width:450px){
+    .container{
+        width:100%;
+        margin:0;
+    }
+    .image-box{
+        display: none;
+    }
+    .input-box{
+        width:95%;
+    }
+    .description{
+        flex-direction:column;
+    }
+    form{
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./index.js" async defer></script>
+    <title>Stock: Profit or Loss</title>
+</head>
+<body>
+    <div class="container">
+            <div class="description">
+                <div class="contact-links">
+                    <a href=""><div class="github-repo">Github Repo</div></a>
+                    <a href="https://www.linkedin.com/in/sonali-gpt/">Connect with me on <img src="./images/socialstab.png" alt="linkedin-img"/></a>
+                </div>
+                <div class="heading">
+                    <h1>Profit or Loss?</h1>
+                    <p>Enter your stock purchase price, number of units of stock bought and current price and we
+                    will tell you how much profit or loss you have incurred.
+                </p>
+                </div>
+            </div>
+            <div class="sub-box">
+                <div class="image-box">
+                    <img src="images/investment7a.jpg" alt="investment.png" class="img"/>
+                </div>
+                <div class="input-box">
+                    <form >
+                        <label class="price">
+                            Purchase Price:
+                            <input type="number" required step="any" class="purchase" />
+                        </label>
+                        <label class="quantity">
+                            Stock units bought:
+                            <input type="number" required step="any" class="unit"/>
+                        </label>
+                        <label class="price">
+                            Current Price:
+                            <input type="number" required step="any" class="cost-price"/>
+                        </label>
+                        <button type="submit" class="btn">Check</button>
+                    </form>
+                    <div class="result-box">
+                        <h2 class="result"></h2>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
