@@ -10,6 +10,7 @@ body{
     width:75%;
     margin:auto auto;
     box-shadow: 5px 5px 10px 5px gainsboro;
+    background-color: white;
 }
 .description{
     display:flex;
@@ -70,9 +71,14 @@ input{
     .container{
         width:100%;
         margin:0;
+        box-shadow: none;
+        height:100%;
+    }
+    .sub-box{
+        flex-direction: column;
     }
     .image-box{
-        display: none;
+        width:100%;
     }
     .input-box{
         width:95%;
