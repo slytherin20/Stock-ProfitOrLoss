@@ -18,7 +18,7 @@ e.preventDefault()
 let costPrice = Number(purchasePrice.value).toFixed(2);
 let qty = Number(quantity.value).toFixed(2);
 let sellingPrice = Number(todayPrice.value).toFixed(2);
-if(costPrice>0 && sellingPrice>0){
+if(costPrice>0 && sellingPrice>0 && qty>0){
     let difference = sellingPrice - costPrice;
     let pOrL = (difference*qty).toFixed(2);
     if(pOrL<0){
