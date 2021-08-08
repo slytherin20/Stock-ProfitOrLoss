@@ -29,6 +29,9 @@ if(costPrice>0 && sellingPrice>0 && qty>0){
     }
 }
 else{
+    if(button.style.backgroundColor!=="rgb(49, 49, 124)"){
+        defaultTheme()
+    }
     result.innerText = "Please enter a valid number."
 }
 
@@ -98,4 +101,18 @@ function superSadTheme(){
     img.removeAttribute("src");
     img.setAttribute("src","https://media.giphy.com/media/ujZtlj1Y7wXyE/giphy.gif")
     
+}
+
+function defaultTheme(){
+    desciptionBox.style.backgroundColor = "rgb(44, 44, 110);";
+    button.style.backgroundColor = "rgb(49, 49, 124)";
+    result.style.color="rgb(44, 44, 110)";
+    inputField[0].style.borderBottom = "solid 2px rgb(44, 44, 110)";
+    inputField[1].style.borderBottom = "solid 2px rgb(44, 44, 110)";
+    inputField[2].style.borderBottom = "solid 2px rgb(44, 44, 110)";
+    body.style.backgroundColor = "white";
+    container.style.boxShadow = "5px 5px 10px 5px gainsboro";
+    
+    img.removeAttribute("src");
+    img.setAttribute("src","images/investment7a.jpg");
 }
