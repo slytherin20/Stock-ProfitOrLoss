@@ -104,7 +104,7 @@ function superSadTheme(){
 }
 
 function defaultTheme(){
-    desciptionBox.style.backgroundColor = "rgb(44, 44, 110);";
+    desciptionBox.style.backgroundColor = "rgb(44, 44, 110)";
     button.style.backgroundColor = "rgb(49, 49, 124)";
     result.style.color="rgb(44, 44, 110)";
     inputField[0].style.borderBottom = "solid 2px rgb(44, 44, 110)";
